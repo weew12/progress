@@ -13,7 +13,46 @@
 # WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+'''
+ANSI 控制序列主要用于在文本终端中控制字符颜色的显示，
+它们在 Unix-like 系统（如 Linux）的终端中非常普遍和有效。
+这些控制序列是基于 ANSI 标准，它们在早期的计算机系统中用于在文本模式下改变字符的显示属性，如颜色、亮度、下划线等。
 
+设置文本字体样式
+\033[0m 默认样式
+\033[1m 粗体
+\033[4m 下划线
+\033[5m 闪烁
+\033[7m 反向（阴阳）
+\033[9m 隐藏
+\033[21m 非粗体
+\033[24m 非下划线
+\033[25m 非闪烁
+\033[27m 非反向
+\033[90m 不可见
+
+设置背景色
+\033[40m 黑色背景
+\033[41m 红色背景
+\033[42m 绿色背景
+\033[43m 黄色背景
+\033[44m 蓝色背景
+\033[45m 紫色背景
+\033[46m 青色背景
+\033[47m 白色背景
+
+设置前景色
+\033[30m 黑色前景
+\033[31m 红色前景
+\033[32m 绿色前景
+\033[33m 黄色前景
+\033[34m 蓝色前景
+\033[35m 紫色前景
+\033[36m 青色前景
+\033[37m 白色前景
+
+
+'''
 from functools import partial
 
 
